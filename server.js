@@ -1,3 +1,4 @@
+// required connections
 const express = require("express");
 const mongoose = require("mongoose");
 const apiRoutes = require("./routes/api");
