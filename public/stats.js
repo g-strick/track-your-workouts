@@ -22,7 +22,14 @@ function generatePalette() {
 }
 
 function populateChart(data) {
-  let durations = data.map(({ totalDuration }) => totalDuration);
+  console.log("data:", data);
+  let durations = data.map((workout) => {
+    //data.map loops through all the data. reduce will go thru each "ex" and add the duration to the total, that is what return total + ex.duration does. the 0 at the end makes "total" start at 0.
+    const duration = workout.exercises.reduce((total, ex) => {
+      return total + ex.duration;
+    }, 0);
+    return duration;
+  });
   let pounds = calculateTotalWeight(data);
   let workouts = workoutNames(data);
   const colors = generatePalette();
