@@ -1,37 +1,30 @@
-# track-your-workouts
+# Track Your Workouts
 
-Workout tracker that can be used to view, create and track daily workouts.
+## Deployed
 
-# Unit 17 NoSQL Homework: Workout Tracker
+Check out the deployed web app here 👉 [Track Your Workouts 💪](https://track-your-workoutss.herokuapp.com/)
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Description
 
-## User Story
+This is a workout tracking application that utilizes Javascript, HTML and CSS for frontend functionality. MongoDB/Mongoose are being used to store the data and the deployment is used on Heroku via Atlas.
 
-- As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Screenshots
 
-## Business Context
+![Dashboard](public/images/Dashboard.png)
+![Fitness Tracker](public/images/FitnessTracker.png)
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+## Usage
 
-## Acceptance Criteria
+Log resistance and cardio based exercises on different workouts, and then view your stats via the dashboard!
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+## Contributions
 
-The user should be able to:
+Submit a pull request.
 
-- Add exercises to the most recent workout plan.
+## Questions
 
-- Add new exercises to a new workout plan.
+https://github.com/g-strick
 
-- View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+## License
 
-- View the total duration of each workout from the past seven workouts on the `stats` page.
-
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
-
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
-
-- [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
-
-- [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
